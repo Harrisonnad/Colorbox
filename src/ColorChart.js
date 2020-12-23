@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Box from './Box'
+import './ColorChart.css'
 
 export default class ColorChart extends Component {
     static defaultProps = {
@@ -18,7 +19,7 @@ export default class ColorChart extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="BoxContainer">
                 {this.props.Box.map((box) => (
                     <Box color={box.color} id={box.id} />
                 ))}
